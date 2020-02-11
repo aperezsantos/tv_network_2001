@@ -85,13 +85,13 @@ pry(main)> require './lib/show'
 pry(main)> require './lib/character'
 # => true
 
-pry(main)> nbc = Network.new("NBC")    
+pry(main)> network = Network.new("NBC")    
 # => #<Network:0x00007fe5f83ea3b0...>
 
-pry(main)> nbc.name
+pry(main)> network.name
 # => "NBC"
 
-pry(main)> nbc.shows
+pry(main)> network.shows
 # => []
 
 pry(main)> michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})    
