@@ -44,28 +44,28 @@ pry(main)> require './lib/show'
 pry(main)> character = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})    
 # => #<Character:0x00007f98a4ba8dc8...>
 
-pry(main)> michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
+pry(main)> character2 = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
 # => #<Character:0x00007f8327213de0...>
 
-pry(main)> knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, character])    
+pry(main)> show = Show.new("Knight Rider", "Glen Larson", [michael_knight, character])    
 # => #<Show:0x00007f83280b3288...>
 
-pry(main)> knight_rider.name
+pry(main)> show.name
 # => "Knight Rider"
 
-pry(main)> knight_rider.creator
+pry(main)> show.creator
 # => "Glen Larson"
 
-pry(main)> knight_rider.characters
+pry(main)> show.characters
 # => [#<Character:0x00007f8327213de0...>, #<Character:0x00007f8326ab57d8...>]
 
-pry(main)> knight_rider.total_salary
+pry(main)> show.total_salary
 # => 2600000
 
-pry(main)> knight_rider.highest_paid_actor
+pry(main)> show.highest_paid_actor
 # => "David Hasselhoff"
 
-pry(main)> knight_rider.actors
+pry(main)> show.actors
 # => ["David Hasselhoff", "William Daniels"]
 
 
