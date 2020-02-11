@@ -41,13 +41,13 @@ pry(main)> require './lib/character'
 pry(main)> require './lib/show'
 # => true
 
-pry(main)> kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})    
+pry(main)> character = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})    
 # => #<Character:0x00007f98a4ba8dc8...>
 
 pry(main)> michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
 # => #<Character:0x00007f8327213de0...>
 
-pry(main)> knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])    
+pry(main)> knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, character])    
 # => #<Show:0x00007f83280b3288...>
 
 pry(main)> knight_rider.name
@@ -97,7 +97,7 @@ pry(main)> nbc.shows
 pry(main)> michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})    
 # => #<Character:0x00007fe5f88721f8...>
 
-pry(main)> kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})    
+pry(main)> character = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})    
 # => #<Character:0x00007fe5f8448f78...>
 
 pry(main)> knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])    
