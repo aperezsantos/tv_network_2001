@@ -19,4 +19,17 @@ class ShowTest < Minitest::Test
     assert_equal [@character2, @character1], @show.characters
   end
 
+  def test_total_salary
+
+    assert_equal 2600000, @show.total_salary
+  end
+
+  def test_highest_paid_actor
+
+    assert_equal "David Hasselhoff", @show.highest_paid_actor
+  end
+
+  # pry(main)> show.actors
+  # # => ["David Hasselhoff", "William Daniels"]
+
 end
