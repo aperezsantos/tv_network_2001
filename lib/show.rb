@@ -20,4 +20,10 @@ class Show
     max_salary.actor
   end
 
+  def actors
+    @characters.map do |character|
+      character.actor
+    end
+  end
+
 end

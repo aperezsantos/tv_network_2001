@@ -4,6 +4,7 @@ require './lib/show'
 require './lib/character'
 
 class ShowTest < Minitest::Test
+  
   def setup
     @character1 = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
     @character2 = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
@@ -29,7 +30,9 @@ class ShowTest < Minitest::Test
     assert_equal "David Hasselhoff", @show.highest_paid_actor
   end
 
-  # pry(main)> show.actors
-  # # => ["David Hasselhoff", "William Daniels"]
+  def test_show_actors
+
+    assert_equal ["David Hasselhoff", "William Daniels"], @show.actors
+  end
 
 end
